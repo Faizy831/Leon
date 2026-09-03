@@ -36,21 +36,19 @@ export default function FeaturesGrid() {
     return () => window.removeEventListener("keydown", onKey);
   }, [prev, next]);
 
-  // Lock scroll when lightbox is open — compensate scrollbar width to prevent layout shift
+  // Lock scroll on open — only compensate scrollbar width, never remove until exit animation done
   useEffect(() => {
     if (lightboxIndex !== null) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = "hidden";
       document.body.style.paddingRight = `${scrollbarWidth}px`;
-    } else {
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
     }
-    return () => {
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
-    };
   }, [lightboxIndex]);
+
+  const restoreScroll = () => {
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+  };
 
   return (
     <section className="pt-16 pb-24 md:py-32 relative bg-transparent overflow-hidden" id="features">
@@ -152,7 +150,7 @@ export default function FeaturesGrid() {
       </div>
 
       {/* Lightbox */}
-      <AnimatePresence>
+      <AnimatePresence onExitComplete={restoreScroll}>
         {lightboxIndex !== null && (
           <motion.div
             key="lightbox"
