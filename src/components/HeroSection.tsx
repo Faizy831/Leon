@@ -68,27 +68,6 @@ export default function HeroSection() {
           </span>
         </motion.h1>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.25, ease: "easeOut" }}
-          className="w-full max-w-4xl mx-auto mb-12 grid grid-cols-1 sm:grid-cols-3 gap-4"
-        >
-          {hero.gallery.map((shot) => (
-            <div
-              key={shot.src}
-              className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
-            >
-              <Image
-                src={shot.src}
-                alt={shot.alt}
-                fill
-                sizes="(max-width: 640px) 90vw, 30vw"
-                className="object-contain p-3"
-              />
-            </div>
-          ))}
-        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.95 }}
