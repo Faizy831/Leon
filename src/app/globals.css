@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* Client Amber Yellow */
+  --color-amber-500: #F9AF41; 
+  --color-amber-300: #ffd699;
+  
+  --color-accent-500: #F9AF41;
+  --color-accent-300: #ffd699;
+
+  /* LÉON logo orange (sampled from the brand symbol) */
+  --color-leon-orange: #ec634d;
+  --color-accent-glow: rgba(249, 175, 65, 0.15);
+  
+  --color-glass-bg: rgba(255, 255, 255, 0.8);
+  --color-glass-border: rgba(0, 0, 0, 0.05);
+
+  /* Client Navy Blue (overriding default dark gray to enforce branding globally) */
+  --color-gray-950: #071c2e;
+  --color-gray-900: #114473; /* Navy Blue exactly as requested */
+  --color-gray-800: #14568c;
+  --color-gray-600: #4a5c68; /* Ink soft from HTML */
+  --color-gray-700: #0b1f2e; /* Ink from HTML */
+
+  --font-display: var(--font-space), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #eef1f2; /* Paper color from original HTML */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #eef1f2; /* Paper color from original HTML */
+  color: #114473; /* Client Navy Blue text base */
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom Selection */
+::selection {
+  background: var(--color-accent-500);
+  color: #fff;
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #eef1f2;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-400);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-600);
+}
+
+/* Utility to hide scrollbar but keep functionality if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
