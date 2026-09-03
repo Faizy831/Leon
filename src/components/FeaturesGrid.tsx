@@ -51,7 +51,7 @@ export default function FeaturesGrid() {
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                 
                 <div className="flex items-start justify-between mb-10 relative z-10">
-                  <div className="w-14 h-14 rounded-[20px] flex items-center justify-center bg-white shadow-[0_4px_20px_-4px_rgba(0,0,0,0.08)] border border-gray-100 group-hover:scale-110 transition-all duration-500" style={{ color: '#ec634d' }}>
+                  <div className="w-14 h-14 rounded-[20px] flex items-center justify-center shadow-[0_4px_20px_-4px_rgba(236,99,77,0.15)] group-hover:scale-110 transition-all duration-500" style={{ color: '#ec634d', backgroundColor: 'rgba(236,99,77,0.10)', border: '1px solid rgba(236,99,77,0.18)' }}>
                     <Icon className="w-6 h-6" />
                   </div>
                 </div>
