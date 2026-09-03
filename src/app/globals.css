@@ -36,6 +36,9 @@ body {
   background-color: #eef1f2; /* Paper color from original HTML */
   color: #114473; /* Client Navy Blue text base */
   -webkit-font-smoothing: antialiased;
+  /* Set to the real scrollbar width while scroll is locked (lightbox open),
+     so removing the scrollbar doesn't widen the page and shift everything. */
+  padding-right: var(--sbw, 0px);
   overflow-x: hidden;
 }
 

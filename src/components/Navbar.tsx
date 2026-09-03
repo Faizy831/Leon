@@ -56,11 +56,17 @@ export default function Navbar() {
   });
 
   return (
-    <motion.header 
+    // Plain (non-animated) wrapper owns the fixed positioning and scrollbar
+    // compensation, so it snaps instantly. The `transition-all` below on the
+    // header animates its own scroll-driven styling — putting the --sbw
+    // compensation on that element too would make it visibly slide instead
+    // of snapping when the scrollbar appears/disappears.
+    <div style={{ paddingRight: "var(--sbw, 0px)" }} className="fixed inset-x-0 z-50">
+    <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed inset-x-0 z-50 flex justify-center transition-all duration-500 ${
+      className={`relative flex justify-center transition-all duration-500 ${
         isScrolled ? "top-4 px-4 md:top-6" : "top-0 px-0"
       }`}
     >
@@ -162,5 +168,6 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </motion.header>
+    </div>
   );
 }

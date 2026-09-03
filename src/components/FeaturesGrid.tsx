@@ -6,6 +6,21 @@ import { useLanguage } from "../context/LanguageContext";
 import { Clock, MapPin, Download, Ruler, Smartphone, Box, X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import Image from "next/image";
 
+// Measures the browser's real scrollbar width via an isolated test element,
+// independent of this page's own overflow setup (which can't be measured
+// reliably via window.innerWidth vs document.documentElement.clientWidth here).
+function getScrollbarWidth(): number {
+  const outer = document.createElement("div");
+  outer.style.cssText = "visibility:hidden;position:absolute;top:-9999px;width:100px;overflow:scroll;";
+  document.body.appendChild(outer);
+  const inner = document.createElement("div");
+  inner.style.width = "100%";
+  outer.appendChild(inner);
+  const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+  outer.remove();
+  return scrollbarWidth;
+}
+
 export default function FeaturesGrid() {
   const { content } = useLanguage();
   const { featuresSection, hero } = content;
@@ -36,18 +51,21 @@ export default function FeaturesGrid() {
     return () => window.removeEventListener("keydown", onKey);
   }, [prev, next]);
 
-  // Lock scroll on open — only compensate scrollbar width, never remove until exit animation done
+  // Lock scroll on open, never remove until exit animation done. Compensate
+  // for the vanished scrollbar with the real measured width so the page
+  // (and the fixed header, via the same --sbw var) doesn't widen and shift
+  // sideways. Scroll position itself is untouched — only overflow changes.
   useEffect(() => {
     if (lightboxIndex !== null) {
-      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      const scrollbarWidth = getScrollbarWidth();
+      document.documentElement.style.setProperty("--sbw", `${scrollbarWidth}px`);
       document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
     }
   }, [lightboxIndex]);
 
   const restoreScroll = () => {
     document.body.style.overflow = "";
-    document.body.style.paddingRight = "";
+    document.documentElement.style.setProperty("--sbw", "0px");
   };
 
   return (
