@@ -15,8 +15,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
           <div className="flex items-center">
             <Image 
-              src="/EMMA_symbol.png" 
-              alt="EMMA Symbol" 
+              src="/LEON_symbol.png" 
+              alt="LÉON Symbol" 
               width={48} 
               height={48} 
               className="object-contain opacity-90 hover:opacity-100 transition-opacity"
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-xs text-gray-400 gap-4">
-          <div className="font-medium">&copy; {new Date().getFullYear()} EMMA. {language === 'fr' ? 'Tous droits réservés.' : 'All rights reserved.'}</div>
+          <div className="font-medium">&copy; {new Date().getFullYear()} LÉON. {language === 'fr' ? 'Tous droits réservés.' : 'All rights reserved.'}</div>
           <div className="text-center md:text-right font-medium">{footerText}</div>
         </div>
       </div>

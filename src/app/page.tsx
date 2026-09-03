@@ -16,7 +16,7 @@ import Link from 'next/link';
 const products = [
   {
     id: 'emma',
-    name: 'Emma',
+    name: 'EMMA',
     logo: '/EMMA_logo.png',
     link: '#',
     bgColor: 'bg-[#FDF4E7]',

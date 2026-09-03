@@ -2,7 +2,7 @@ export type Language = 'en' | 'fr';
 
 export const siteConfig = {
   en: {
-    projectInitials: ["EMM", "A"],
+    projectInitials: ["LÉO", "N"],
     navLinks: [
       { label: "Features", href: "#features" },
       { label: "Value Proposition", href: "#value" },
@@ -67,7 +67,7 @@ export const siteConfig = {
     valueSection: {
       eyebrow: "Value Proposition",
       heading: "Reliable data, available immediately",
-      subheading: "EMMA shortens the time between measurement and decision, on site as well as in operation.",
+      subheading: "LÉON shortens the time between measurement and decision, on site as well as in operation.",
       values: [
         {
           num: "01",
@@ -111,7 +111,7 @@ export const siteConfig = {
     complianceSection: {
       eyebrow: "Normative compliance",
       heading: "Complies with European standard EN 13848",
-      description: "EMMA meets the requirements of the European standard for track geometry measurement systems.",
+      description: "LÉON meets the requirements of the European standard for track geometry measurement systems.",
       badgeTop: "EN",
       badgeBottom: "13848"
     },
@@ -119,7 +119,7 @@ export const siteConfig = {
       headlinePart1: "Switch to",
       highlightWord: "real-time",
       headlinePart2: "measurement",
-      description: "Talk to our team to evaluate EMMA on your network or your next construction site.",
+      description: "Talk to our team to evaluate LÉON on your network or your next construction site.",
       primaryButton: { label: "Request a Demo", href: "#contact" },
       secondaryButton: { label: "Download Datasheet", href: "#" }
     },
@@ -127,7 +127,7 @@ export const siteConfig = {
     navCta: "Request a Demo",
   },
   fr: {
-    projectInitials: ["EMM", "A"],
+    projectInitials: ["LÉO", "N"],
     navLinks: [
       { label: "Fonctionnalités", href: "#features" },
       { label: "Valeur ajoutée", href: "#value" },
@@ -192,7 +192,7 @@ export const siteConfig = {
     valueSection: {
       eyebrow: "Valeur ajoutée",
       heading: "Une donnée fiable, disponible tout de suite",
-      subheading: "EMMA raccourcit le délai entre la mesure et la décision, sur chantier comme en exploitation.",
+      subheading: "LÉON raccourcit le délai entre la mesure et la décision, sur chantier comme en exploitation.",
       values: [
         {
           num: "01",
@@ -236,7 +236,7 @@ export const siteConfig = {
     complianceSection: {
       eyebrow: "Conformité normative",
       heading: "Conforme à la norme européenne EN 13848",
-      description: "EMMA répond aux exigences de la norme européenne relative aux systèmes de mesure de la géométrie de voie.",
+      description: "LÉON répond aux exigences de la norme européenne relative aux systèmes de mesure de la géométrie de voie.",
       badgeTop: "EN",
       badgeBottom: "13848"
     },
@@ -244,7 +244,7 @@ export const siteConfig = {
       headlinePart1: "Passez à la mesure",
       highlightWord: "en temps réel",
       headlinePart2: "",
-      description: "Échangez avec notre équipe pour évaluer EMMA sur votre réseau ou votre prochain chantier.",
+      description: "Échangez avec notre équipe pour évaluer LÉON sur votre réseau ou votre prochain chantier.",
       primaryButton: { label: "Demander une démonstration", href: "#contact" },
       secondaryButton: { label: "Télécharger la fiche technique", href: "#" }
     },

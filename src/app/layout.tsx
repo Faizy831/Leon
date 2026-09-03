@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "EMMA — Next-Gen Track Geometry",
-  description: "Measure the track and validate in the field in real time. EMMA records cant, twist, and odometry directly from a smartphone.",
+  title: "LÉON — Next-Gen Track Geometry",
+  description: "Measure the track and validate in the field in real time. LÉON records cant, twist, and odometry directly from a smartphone.",
 };
 
 export default function RootLayout({
