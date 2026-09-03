@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
 import { Clock, MapPin, Download, Ruler, Smartphone, Box } from "lucide-react";
+import Image from "next/image";
 
 export default function FeaturesGrid() {
   const { content } = useLanguage();
@@ -54,9 +55,14 @@ export default function FeaturesGrid() {
                   <div className="w-14 h-14 rounded-[20px] flex items-center justify-center bg-white shadow-[0_4px_20px_-4px_rgba(0,0,0,0.08)] border border-gray-100 text-amber-500 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all duration-500">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <span className="font-mono text-[11px] font-bold tracking-widest px-3 py-1.5 rounded-full bg-[#051625]/5 text-gray-500 uppercase border border-gray-200/50 group-hover:bg-[#051625] group-hover:text-amber-500 group-hover:border-transparent transition-colors duration-300">
-                    {feature.id}
-                  </span>
+                  <div className="w-10 h-10 relative opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                    <Image
+                      src="/LEON_symbol_new.png"
+                      alt="LÉON Symbol"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
                 
                 <h3 className="text-2xl font-display font-bold text-gray-900 mb-4 leading-tight relative z-10 min-h-[64px]">
