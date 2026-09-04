@@ -3,7 +3,6 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import FeaturesGrid from '@/components/FeaturesGrid';
-import ValueProposition from '@/components/ValueProposition';
 import BenefitsPanel from '@/components/BenefitsPanel';
 import ComplianceSection from '@/components/ComplianceSection';
 import CallToAction from '@/components/CallToAction';
@@ -51,7 +50,6 @@ export default function Home() {
       <main className="relative">
         <HeroSection />
         <FeaturesGrid />
-        <ValueProposition />
         <BenefitsPanel />
         <ComplianceSection />
         <CallToAction />
@@ -70,10 +68,10 @@ export default function Home() {
                 >
                   <div className={`h-64 relative flex items-center justify-center p-8 ${product.bgColor}`}>
                     <div className="relative w-full h-full transform group-hover:scale-105 transition-transform duration-500">
-                      <Image 
-                        src={product.logo} 
+                      <Image
+                        src={product.logo}
                         alt={`${product.name} Logo`}
-                        fill 
+                        fill
                         className="object-contain"
                       />
                     </div>

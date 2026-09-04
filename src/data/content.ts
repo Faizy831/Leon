@@ -5,7 +5,6 @@ export const siteConfig = {
     projectInitials: ["LÉO", "N"],
     navLinks: [
       { label: "Features", href: "#features" },
-      { label: "Value Proposition", href: "#value" },
       { label: "Standard", href: "#standard" },
     ],
     hero: {
@@ -64,30 +63,8 @@ export const siteConfig = {
         }
       ]
     },
-    valueSection: {
-      eyebrow: "Value Proposition",
-      heading: "Reliable data, available immediately",
-      subheading: "LÉON shortens the time between measurement and decision, on site as well as in operation.",
-      values: [
-        {
-          num: "01",
-          title: "Derailment prevention",
-          description: "Early detection of critical geometric defects, during the construction phase or when returning the tracks."
-        },
-        {
-          num: "02",
-          title: "Immediate post-work control",
-          description: "Reliable restitution of the track at the end of an intervention, without waiting time for the results."
-        },
-        {
-          num: "03",
-          title: "Autonomous operation",
-          description: "A smartphone interface is enough — no computer, no heavy logistics to mobilize."
-        }
-      ]
-    },
     benefitsSection: {
-      eyebrow: "Why choose LÉON",
+      eyebrow: "Value Proposition",
       heading: "Why choose LÉON?",
       tagline: "Track geometry measurement, reinvented",
       benefits: [
@@ -117,11 +94,11 @@ export const siteConfig = {
     },
     ctaSection: {
       headlinePart1: "Switch to",
-      highlightWord: "real-time",
-      headlinePart2: "measurement",
-      description: "Talk to our team to evaluate LÉON on your network or your next construction site.",
+      highlightWord: "LÉON",
+      headlinePart2: "",
+      description: "Talk To Our Team Now!",
       primaryButton: { label: "Request a Demo", href: "#contact" },
-      secondaryButton: { label: "Download Datasheet", href: "#" }
+      secondaryButton: { label: "Download Technical Sheet", href: "#" }
     },
     footerText: "Track Geometry and Twist Measurement Trolley",
     navCta: "Request a Demo",
@@ -130,7 +107,6 @@ export const siteConfig = {
     projectInitials: ["LÉO", "N"],
     navLinks: [
       { label: "Fonctionnalités", href: "#features" },
-      { label: "Valeur ajoutée", href: "#value" },
       { label: "Conformité", href: "#standard" },
     ],
     hero: {
@@ -189,30 +165,8 @@ export const siteConfig = {
         }
       ]
     },
-    valueSection: {
-      eyebrow: "Valeur ajoutée",
-      heading: "Une donnée fiable, disponible tout de suite",
-      subheading: "LÉON raccourcit le délai entre la mesure et la décision, sur chantier comme en exploitation.",
-      values: [
-        {
-          num: "01",
-          title: "Prévention des déraillements",
-          description: "Détection précoce des défauts géométriques critiques, en phase chantier ou lors de la restitution des voies."
-        },
-        {
-          num: "02",
-          title: "Contrôle post-travaux immédiat",
-          description: "Restitution fiable de la voie dès la fin d'une intervention, sans délai d'attente pour les résultats."
-        },
-        {
-          num: "03",
-          title: "Opération autonome sur le terrain",
-          description: "Une interface smartphone suffit — sans ordinateur, sans logistique lourde à mobiliser."
-        }
-      ]
-    },
     benefitsSection: {
-      eyebrow: "Pourquoi choisir LÉON",
+      eyebrow: "Valeur ajoutée",
       heading: "Pourquoi choisir LÉON ?",
       tagline: "La mesure de géométrie de voie réinventée",
       benefits: [
@@ -241,10 +195,10 @@ export const siteConfig = {
       badgeBottom: "13848"
     },
     ctaSection: {
-      headlinePart1: "Passez à la mesure",
-      highlightWord: "en temps réel",
+      headlinePart1: "Passez à",
+      highlightWord: "LÉON",
       headlinePart2: "",
-      description: "Échangez avec notre équipe pour évaluer LÉON sur votre réseau ou votre prochain chantier.",
+      description: "Contactez notre équipe maintenant !",
       primaryButton: { label: "Demander une démonstration", href: "#contact" },
       secondaryButton: { label: "Télécharger la fiche technique", href: "#" }
     },
