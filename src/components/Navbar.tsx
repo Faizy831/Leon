@@ -117,8 +117,8 @@ export default function Navbar() {
           </nav>
           
           <div className="flex items-center gap-4">
-            <Link 
-              href="#contact" 
+            <Link
+              href="/demo"
               className={`hidden md:inline-flex text-sm font-bold px-6 py-2.5 rounded-full transition-all hover:scale-105 active:scale-95 shadow-md whitespace-nowrap ${
                 isScrolled ? 'bg-gray-900 hover:bg-black text-white shadow-gray-300' : 'bg-white text-gray-900 hover:bg-gray-100 shadow-black/20'
               }`}
@@ -157,8 +157,8 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link 
-              href="#contact"
+            <Link
+              href="/demo"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-4 bg-amber-500 text-gray-900 font-bold text-center py-4 rounded-xl shadow-md active:scale-95 transition-transform"
             >

@@ -56,12 +56,9 @@ export default function BenefitsPanel() {
               {benefitsSection.eyebrow}
             </p>
           </div>
-          <h2 className="font-display text-4xl md:text-5xl uppercase tracking-tight text-white font-bold mb-6">
+          <h2 className="font-display text-4xl md:text-5xl uppercase tracking-tight text-white font-bold">
             {benefitsSection.heading}
           </h2>
-          <p className="text-lg text-gray-300 font-body font-medium">
-            {benefitsSection.tagline}
-          </p>
         </motion.div>
 
         {/* Benefit rows — two columns of wide cards so every title fits one line */}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { CheckCircle2, FileDown, ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import SpotlightCard from "./ui/SpotlightCard";
 
 export default function SolutionSection() {
   const { content } = useLanguage();
@@ -11,12 +12,17 @@ export default function SolutionSection() {
 
   return (
     <section className="relative py-32 bg-[#071c2e] overflow-hidden" id="solution">
-      <div className="max-w-[820px] mx-auto px-8 relative z-10 text-center">
+      <div className="max-w-[900px] mx-auto px-8 relative z-10">
+        <SpotlightCard
+          spotlightColor="rgba(236, 99, 77, 0.12)"
+          className="bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] rounded-3xl p-8 md:p-16 text-center"
+        >
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="relative z-10"
         >
           <div className="flex items-center justify-center gap-4 mb-6">
             <span className="w-8 h-px bg-leon-orange" />
@@ -49,7 +55,7 @@ export default function SolutionSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
             <Link
               href={solutionSection.downloadButton.href}
-              className="inline-flex items-center gap-3 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all hover:border-white/40 hover:bg-white/10 shadow-sm bg-white/5 backdrop-blur-sm"
+              className="inline-flex items-center gap-3 border border-white/20 text-white hover:text-leon-orange font-semibold px-8 py-4 rounded-xl transition-all hover:border-leon-orange/40 hover:bg-white/10 shadow-sm bg-white/5 backdrop-blur-sm"
             >
               <FileDown className="w-4 h-4" />
               {solutionSection.downloadButton.label}
@@ -69,6 +75,7 @@ export default function SolutionSection() {
             </Link>
           </div>
         </motion.div>
+        </SpotlightCard>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space",
@@ -31,6 +32,7 @@ export default function RootLayout({
     >
       <body suppressHydrationWarning className="bg-black text-white antialiased overflow-x-hidden selection:bg-amber-500/30 selection:text-amber-200">
         <LanguageProvider>
+          <ScrollToTop />
           {children}
         </LanguageProvider>
       </body>

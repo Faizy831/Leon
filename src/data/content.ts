@@ -12,7 +12,7 @@ export const siteConfig = {
       headlinePart1: "The Next-Generation",
       headlinePart2: "Portable Railway Measurement",
       highlightWord: "Trolley",
-      primaryButton: { label: "Request a Demo", href: "#contact" },
+      primaryButton: { label: "Request a Demo", href: "/demo" },
       secondaryButton: { label: "View Features", href: "#features" },
       gallery: [
         { src: "/leon-trolley-three-quarter.jpg", alt: "The LÉON measuring trolley seen from a three-quarter angle" },
@@ -66,7 +66,6 @@ export const siteConfig = {
     benefitsSection: {
       eyebrow: "Value Proposition",
       heading: "Why choose LÉON?",
-      tagline: "Track geometry measurement, reinvented",
       benefits: [
         { title: "One pass, every measurement", description: "Position, cant and gauge captured together — no repeat runs." },
         { title: "8 kg, folds to 90 cm", description: "One agent carries, sets up and packs it away — solo." },
@@ -82,15 +81,15 @@ export const siteConfig = {
     },
     solutionSection: {
       eyebrow: "Our Approach",
-      heading: "A solution designed by the field, for the field.",
+      heading: "A solution designed by the field, for the field",
       features: [
         "Railway track maintenance and inspection",
         "Monitoring of heavy mechanical tamping during works",
         "Monitoring of track alignment and geometry",
       ],
-      downloadButton: { label: "Download Technical Sheet", href: "#" },
+      downloadButton: { label: "Download Technical Sheet", href: "/technical-sheet" },
       ctaHeading: "Want a demo? Let's talk",
-      ctaButton: { label: "Book A Demo Today", href: "#contact" },
+      ctaButton: { label: "Book A Demo Today", href: "/demo" },
     },
     complianceSection: {
       eyebrow: "Normative compliance",
@@ -100,12 +99,12 @@ export const siteConfig = {
       badgeBottom: "13848"
     },
     ctaSection: {
-      headlinePart1: "Switch to",
+      headlinePart1: "Discover",
       highlightWord: "LÉON",
       headlinePart2: "",
       description: "Talk To Our Team Now!",
-      primaryButton: { label: "Request a Demo", href: "#contact" },
-      secondaryButton: { label: "Download Technical Sheet", href: "#" }
+      primaryButton: { label: "Request a Demo", href: "/demo" },
+      secondaryButton: { label: "Download Technical Sheet", href: "/technical-sheet" }
     },
     footerText: "Railway Maintenance Reinvented",
     navCta: "Request a Demo",
@@ -121,7 +120,7 @@ export const siteConfig = {
       headlinePart1: "Mesurez la voie",
       headlinePart2: "Validez sur le",
       highlightWord: "terrain",
-      primaryButton: { label: "Demander une démonstration", href: "#contact" },
+      primaryButton: { label: "Demander une démonstration", href: "/demo" },
       secondaryButton: { label: "Voir les fonctionnalités", href: "#features" },
       gallery: [
         { src: "/leon-trolley-three-quarter.jpg", alt: "Le chariot de mesure LÉON vu de trois quarts" },
@@ -175,7 +174,6 @@ export const siteConfig = {
     benefitsSection: {
       eyebrow: "Valeur ajoutée",
       heading: "Pourquoi choisir LÉON ?",
-      tagline: "La mesure de géométrie de voie réinventée",
       benefits: [
         { title: "Un seul passage, toutes les mesures", description: "Position, dévers et écartement relevés ensemble — sans repasser." },
         { title: "8 kg, replié à 90 cm", description: "Un seul agent le transporte, l'installe et le range — en autonomie." },
@@ -191,15 +189,15 @@ export const siteConfig = {
     },
     solutionSection: {
       eyebrow: "Notre approche",
-      heading: "Une solution pensée par le terrain, pour le terrain.",
+      heading: "Une solution pensée par le terrain, pour le terrain",
       features: [
         "Maintenance et inspection des voies ferrées",
         "Suivi en phase travaux du bourrage mécanique lourd",
         "Surveillance de l'alignement et de la géométrie de la voie",
       ],
-      downloadButton: { label: "Télécharger la fiche technique", href: "#" },
+      downloadButton: { label: "Télécharger la fiche technique", href: "/technical-sheet" },
       ctaHeading: "Besoin d'une démo ? Parlons-en",
-      ctaButton: { label: "Réservez une démo aujourd'hui", href: "#contact" },
+      ctaButton: { label: "Réservez une démo aujourd'hui", href: "/demo" },
     },
     complianceSection: {
       eyebrow: "Conformité normative",
@@ -209,12 +207,12 @@ export const siteConfig = {
       badgeBottom: "13848"
     },
     ctaSection: {
-      headlinePart1: "Passez à",
+      headlinePart1: "Découvrez",
       highlightWord: "LÉON",
       headlinePart2: "",
       description: "Contactez notre équipe maintenant !",
-      primaryButton: { label: "Demander une démonstration", href: "#contact" },
-      secondaryButton: { label: "Télécharger la fiche technique", href: "#" }
+      primaryButton: { label: "Demander une démonstration", href: "/demo" },
+      secondaryButton: { label: "Télécharger la fiche technique", href: "/technical-sheet" }
     },
     footerText: "La Maintenance Ferroviaire Réinventée",
     navCta: "Demander une démo",

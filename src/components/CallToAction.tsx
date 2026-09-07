@@ -47,8 +47,8 @@ export default function CallToAction() {
               <ArrowRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link 
-              href={ctaSection.secondaryButton.href} 
-              className="inline-flex items-center gap-3 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all hover:border-white/40 hover:bg-white/10 shadow-sm bg-white/5 backdrop-blur-sm"
+              href={ctaSection.secondaryButton.href}
+              className="inline-flex items-center gap-3 border border-white/20 text-white hover:text-leon-orange font-semibold px-8 py-4 rounded-xl transition-all hover:border-leon-orange/40 hover:bg-white/10 shadow-sm bg-white/5 backdrop-blur-sm"
             >
               <Download className="w-4 h-4" />
               {ctaSection.secondaryButton.label}
