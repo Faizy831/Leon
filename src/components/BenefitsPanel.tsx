@@ -1,9 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import {
-  ArrowRight,
   Layers,
   Package,
   Bluetooth,
@@ -105,36 +103,6 @@ export default function BenefitsPanel() {
             );
           })}
         </div>
-
-        {/* Closing CTA band */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.8 }}
-          className="mt-16 rounded-[28px] border border-white/10 bg-gradient-to-r from-leon-orange/[0.12] via-white/[0.04] to-transparent p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-8"
-        >
-          <p className="max-w-2xl font-body text-lg font-medium text-white leading-relaxed">
-            {benefitsSection.footerMessagePart1}
-            <span className="font-bold text-leon-orange">
-              {benefitsSection.footerMessageHighlight}
-            </span>
-            {benefitsSection.footerMessagePart2}
-          </p>
-
-          <div className="flex flex-col items-start md:items-end gap-2.5 shrink-0">
-            <Link
-              href={benefitsSection.footerButton.href}
-              className="group inline-flex items-center gap-3 rounded-xl bg-leon-orange text-white font-bold px-8 py-4 shadow-[0_10px_30px_rgba(236,99,77,0.3)] hover:shadow-[0_15px_40px_rgba(236,99,77,0.4)] transition-all hover:scale-105 active:scale-95"
-            >
-              {benefitsSection.footerButton.label}
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <span className="font-body text-sm text-gray-400">
-              {benefitsSection.footerButtonNote}
-            </span>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

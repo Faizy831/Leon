@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import FeaturesGrid from '@/components/FeaturesGrid';
 import BenefitsPanel from '@/components/BenefitsPanel';
+import SolutionSection from '@/components/SolutionSection';
 import ComplianceSection from '@/components/ComplianceSection';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
@@ -51,6 +52,7 @@ export default function Home() {
         <HeroSection />
         <FeaturesGrid />
         <BenefitsPanel />
+        <SolutionSection />
         <ComplianceSection />
         <CallToAction />
         

@@ -79,11 +79,18 @@ export const siteConfig = {
         { title: "One team, one contact", description: "Design, manufacturing, maintenance, support — all in-house." },
         { title: "Repairs on your schedule", description: "Standardized parts — your team fixes it, no import delays." },
       ],
-      footerMessagePart1: "See LÉON measure a full track section in ",
-      footerMessageHighlight: "under 60 seconds",
-      footerMessagePart2: " — live at our stand.",
-      footerButton: { label: "Request a demo", href: "#contact" },
-      footerButtonNote: "Book a private walkthrough",
+    },
+    solutionSection: {
+      eyebrow: "Our Approach",
+      heading: "A solution designed by the field, for the field.",
+      features: [
+        "Railway track maintenance and inspection",
+        "Monitoring of heavy mechanical tamping during works",
+        "Monitoring of track alignment and geometry",
+      ],
+      downloadButton: { label: "Download Technical Sheet", href: "#" },
+      ctaHeading: "Want a demo? Let's talk",
+      ctaButton: { label: "Book A Demo Today", href: "#contact" },
     },
     complianceSection: {
       eyebrow: "Normative compliance",
@@ -100,7 +107,7 @@ export const siteConfig = {
       primaryButton: { label: "Request a Demo", href: "#contact" },
       secondaryButton: { label: "Download Technical Sheet", href: "#" }
     },
-    footerText: "Track Geometry and Twist Measurement Trolley",
+    footerText: "Railway Maintenance Reinvented",
     navCta: "Request a Demo",
   },
   fr: {
@@ -181,11 +188,18 @@ export const siteConfig = {
         { title: "Une équipe, un interlocuteur", description: "Conception, fabrication, maintenance, support — tout en interne." },
         { title: "Réparations à votre rythme", description: "Pièces standardisées — votre équipe intervient, sans délai d'import." },
       ],
-      footerMessagePart1: "Voyez LÉON mesurer une section complète de voie en ",
-      footerMessageHighlight: "moins de 60 secondes",
-      footerMessagePart2: " — en direct sur notre stand.",
-      footerButton: { label: "Demander une démonstration", href: "#contact" },
-      footerButtonNote: "Réservez une présentation privée",
+    },
+    solutionSection: {
+      eyebrow: "Notre approche",
+      heading: "Une solution pensée par le terrain, pour le terrain.",
+      features: [
+        "Maintenance et inspection des voies ferrées",
+        "Suivi en phase travaux du bourrage mécanique lourd",
+        "Surveillance de l'alignement et de la géométrie de la voie",
+      ],
+      downloadButton: { label: "Télécharger la fiche technique", href: "#" },
+      ctaHeading: "Besoin d'une démo ? Parlons-en",
+      ctaButton: { label: "Réservez une démo aujourd'hui", href: "#contact" },
     },
     complianceSection: {
       eyebrow: "Conformité normative",
@@ -202,7 +216,7 @@ export const siteConfig = {
       primaryButton: { label: "Demander une démonstration", href: "#contact" },
       secondaryButton: { label: "Télécharger la fiche technique", href: "#" }
     },
-    footerText: "Chariot de mesure des gauches et de la géométrie de voie",
+    footerText: "La Maintenance Ferroviaire Réinventée",
     navCta: "Demander une démo",
   }
 };
