@@ -69,7 +69,7 @@ export const siteConfig = {
       eyebrow: "Value Proposition",
       heading: "Why choose LÉON?",
       benefits: [
-        { title: "One pass, every measurement", description: "Position, cant and gauge captured together — no repeat runs." },
+        { title: "One run, every measurement", description: "Position, cant and gauge captured together — no repeat runs." },
         { title: "8 kg, folds to 90 cm", description: "One agent carries, sets up and packs it away — solo." },
         { title: "Straight to your tablet", description: "Bluetooth results, real time — no cables, no syncing." },
         { title: "Set up in minutes", description: "No tools, no crew. Place, measure, move on." },
