@@ -81,6 +81,12 @@ export default function FeaturesGrid() {
             transition={{ duration: 0.8 }}
             className="max-w-xl"
           >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-px bg-leon-orange" />
+              <p className="font-mono text-sm tracking-widest uppercase text-leon-orange font-bold">
+                {featuresSection.superEyebrow}
+              </p>
+            </div>
             <p className="font-mono text-sm tracking-widest text-leon-orange uppercase mb-4 font-bold">
               {featuresSection.eyebrow}
             </p>
