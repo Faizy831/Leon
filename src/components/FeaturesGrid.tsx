@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
-import { Clock, MapPin, Download, Ruler, Smartphone, Box, X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
+import { Ruler, Package, Bluetooth, Zap, ShieldCheck, Puzzle, X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import Image from "next/image";
 
 // Measures the browser's real scrollbar width via an isolated test element,
@@ -24,7 +24,7 @@ function getScrollbarWidth(): number {
 export default function FeaturesGrid() {
   const { content } = useLanguage();
   const { featuresSection, hero } = content;
-  const icons = [Clock, MapPin, Download, Ruler, Smartphone, Box];
+  const icons = [Ruler, Package, Bluetooth, Zap, ShieldCheck, Puzzle];
 
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
@@ -135,9 +135,13 @@ export default function FeaturesGrid() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mt-20"
         >
-          <p className="font-mono text-xs tracking-widest text-gray-400 uppercase mb-6 font-bold text-center">
-            LÉON in the field
-          </p>
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <span className="w-8 h-px bg-leon-orange" />
+            <p className="font-mono text-xs tracking-widest text-leon-orange uppercase font-bold text-center">
+              {featuresSection.galleryLabel}
+            </p>
+            <span className="w-8 h-px bg-leon-orange" />
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {hero.gallery.map((shot, index) => (
               <motion.button
