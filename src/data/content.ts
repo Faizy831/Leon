@@ -28,7 +28,6 @@ export const siteConfig = {
       ]
     },
     featuresSection: {
-      superEyebrow: "Value Proposition",
       eyebrow: "Key Features",
       heading: "Everything you need to measure, nothing to carry",
       subheading: "Each survey combines metrological precision and ease of use, designed for the single operator on the track.",
@@ -236,7 +235,6 @@ export const siteConfig = {
       ]
     },
     featuresSection: {
-      superEyebrow: "Valeur ajoutée",
       eyebrow: "Fonctionnalités clés",
       heading: "Tout ce qu'il faut mesurer, rien à transporter",
       subheading: "Chaque relevé combine précision métrologique et simplicité d'usage, pensé pour l'opérateur seul sur la voie.",

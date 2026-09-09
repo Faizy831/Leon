@@ -84,12 +84,9 @@ export default function FeaturesGrid() {
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-px bg-leon-orange" />
               <p className="font-mono text-sm tracking-widest uppercase text-leon-orange font-bold">
-                {featuresSection.superEyebrow}
+                {featuresSection.eyebrow}
               </p>
             </div>
-            <p className="font-mono text-sm tracking-widest text-leon-orange uppercase mb-4 font-bold">
-              {featuresSection.eyebrow}
-            </p>
             <h2 className="text-4xl md:text-5xl font-bold font-display uppercase tracking-tight text-gray-900 mb-6">
               {featuresSection.heading}
             </h2>
