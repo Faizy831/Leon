@@ -83,14 +83,9 @@ export default function BenefitsPanel() {
                   </div>
 
                   <div className="relative z-10 min-w-0">
-                    <div className="flex items-baseline gap-3 mb-2">
-                      <h3 className="font-display text-[19px] font-bold text-white leading-snug">
-                        {benefit.title}
-                      </h3>
-                      <span className="ml-auto shrink-0 font-mono text-[11px] font-bold tracking-widest text-white/25 group-hover:text-leon-orange/70 transition-colors">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                    </div>
+                    <h3 className="font-display text-[19px] font-bold text-white leading-snug mb-2">
+                      {benefit.title}
+                    </h3>
                     <p className="font-body text-[14.5px] leading-relaxed text-gray-400 group-hover:text-gray-300 transition-colors">
                       {benefit.description}
                     </p>
