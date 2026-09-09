@@ -81,7 +81,7 @@ export default function FeaturesGrid() {
             transition={{ duration: 0.8 }}
             className="max-w-xl"
           >
-            <p className="font-mono text-sm tracking-widest text-amber-600 uppercase mb-4 font-bold">
+            <p className="font-mono text-sm tracking-widest text-leon-orange uppercase mb-4 font-bold">
               {featuresSection.eyebrow}
             </p>
             <h2 className="text-4xl md:text-5xl font-bold font-display uppercase tracking-tight text-gray-900 mb-6">
@@ -107,7 +107,7 @@ export default function FeaturesGrid() {
                 className="group relative bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl p-10 flex flex-col h-full overflow-hidden transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 hover:bg-white"
               >
                 {/* Premium Hover Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-br from-leon-orange/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
                 <div className="flex items-start justify-between mb-10 relative z-10">
                   <div className="w-14 h-14 rounded-xl flex items-center justify-center shadow-[0_4px_20px_-4px_rgba(236,99,77,0.15)] group-hover:scale-110 transition-all duration-500" style={{ color: '#ec634d', backgroundColor: 'rgba(236,99,77,0.10)' }}>
