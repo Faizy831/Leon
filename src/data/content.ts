@@ -6,7 +6,6 @@ export const siteConfig = {
     navLinks: [
       { label: "About", href: "/about" },
       { label: "Features", href: "#features" },
-      { label: "Standard", href: "#standard" },
     ],
     hero: {
       eyebrow: "Railway Track Gauge and Position Measuring Trolley",
@@ -92,13 +91,6 @@ export const siteConfig = {
       downloadButton: { label: "Download Technical Sheet", href: "/technical-sheet" },
       ctaHeading: "Want a demo? Let's talk",
       ctaButton: { label: "Book A Demo Today", href: "/demo" },
-    },
-    complianceSection: {
-      eyebrow: "Normative compliance",
-      heading: "Complies with European standard EN 13848",
-      description: "LÉON meets the requirements of the European standard for track geometry measurement systems.",
-      badgeTop: "EN",
-      badgeBottom: "13848"
     },
     ctaSection: {
       headlinePart1: "Discover",
@@ -213,7 +205,6 @@ export const siteConfig = {
     navLinks: [
       { label: "À propos", href: "/about" },
       { label: "Fonctionnalités", href: "#features" },
-      { label: "Conformité", href: "#standard" },
     ],
     hero: {
       eyebrow: "Chariot de mesure — géométrie de voie",
@@ -299,13 +290,6 @@ export const siteConfig = {
       downloadButton: { label: "Télécharger la fiche technique", href: "/technical-sheet" },
       ctaHeading: "Besoin d'une démo ? Parlons-en",
       ctaButton: { label: "Réservez une démo aujourd'hui", href: "/demo" },
-    },
-    complianceSection: {
-      eyebrow: "Conformité normative",
-      heading: "Conforme à la norme européenne EN 13848",
-      description: "LÉON répond aux exigences de la norme européenne relative aux systèmes de mesure de la géométrie de voie.",
-      badgeTop: "EN",
-      badgeBottom: "13848"
     },
     ctaSection: {
       headlinePart1: "Découvrez",

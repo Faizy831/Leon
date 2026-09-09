@@ -5,7 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import FeaturesGrid from '@/components/FeaturesGrid';
 import BenefitsPanel from '@/components/BenefitsPanel';
 import SolutionSection from '@/components/SolutionSection';
-import ComplianceSection from '@/components/ComplianceSection';
+import ApproachSection from '@/components/ApproachSection';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
@@ -53,7 +53,7 @@ export default function Home() {
         <FeaturesGrid />
         <BenefitsPanel />
         <SolutionSection />
-        <ComplianceSection />
+        <ApproachSection />
         <CallToAction />
         
         {/* Our Products Section */}

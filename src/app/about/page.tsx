@@ -4,9 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  MapPin,
   Smartphone,
-  Target,
   Handshake,
   HardHat,
   Tag,
@@ -17,10 +15,10 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ApproachSection from "@/components/ApproachSection";
 import SpotlightCard from "@/components/ui/SpotlightCard";
 import { useLanguage } from "@/context/LanguageContext";
 
-const convictionIcons = [MapPin, Smartphone, Target];
 const whyIcons = [Handshake, Smartphone, HardHat, Tag, Wrench, Layers];
 
 export default function AboutPage() {
@@ -66,61 +64,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Approach */}
-        <section className="relative py-32 bg-[#051625] overflow-hidden">
-          <div className="max-w-[1180px] mx-auto px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
-              className="max-w-2xl mb-16"
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-px bg-leon-orange" />
-                <p className="font-mono text-sm tracking-widest uppercase text-leon-orange font-bold">
-                  {aboutPage.approach.eyebrow}
-                </p>
-              </div>
-              <h2 className="font-display text-3xl md:text-4xl uppercase tracking-tight text-white font-bold mb-6">
-                {aboutPage.approach.heading}
-              </h2>
-              <p className="text-lg text-gray-300 font-body font-medium leading-relaxed">
-                {aboutPage.approach.description}
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {aboutPage.approach.convictions.map((conviction, index) => {
-                const Icon = convictionIcons[index];
-                return (
-                  <motion.div
-                    key={conviction.title}
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
-                    transition={{ duration: 0.5, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    <SpotlightCard
-                      spotlightColor="rgba(236, 99, 77, 0.15)"
-                      className="h-full bg-white/5 border border-white/10 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(0,0,0,0.2)] rounded-[24px] p-8"
-                    >
-                      <div className="relative z-10 flex items-center justify-center w-12 h-12 rounded-2xl bg-leon-orange/10 border border-leon-orange/30 text-leon-orange mb-6 shadow-sm">
-                        {Icon && <Icon className="w-[22px] h-[22px]" strokeWidth={2} />}
-                      </div>
-                      <h3 className="relative z-10 font-display text-lg font-bold text-white mb-3">
-                        {conviction.title}
-                      </h3>
-                      <p className="relative z-10 font-body text-[15px] leading-relaxed text-gray-400">
-                        {conviction.description}
-                      </p>
-                    </SpotlightCard>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+        <ApproachSection />
 
         {/* Products */}
         <section className="relative py-32 bg-black overflow-hidden">
