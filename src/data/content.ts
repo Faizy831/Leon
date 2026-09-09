@@ -70,7 +70,7 @@ export const siteConfig = {
       heading: "Why choose LÉON?",
       benefits: [
         { title: "One run, every measurement", description: "Position, cant and gauge captured together — no repeat runs." },
-        { title: "8 kg, folds to 90 cm", description: "One agent carries, sets up and packs it away — solo." },
+        { title: "Ultra-Lightweight & Portable", description: "Just 8 kg and folds down to 90 cm — light enough to carry, compact enough to store anywhere." },
         { title: "Straight to your tablet", description: "Bluetooth results, real time — no cables, no syncing." },
         { title: "Set up in minutes", description: "No tools, no crew. Place, measure, move on." },
         { title: "Operator safety, built in", description: "Rail-compliant dead man's switch. Light weight, low MSD risk." },
@@ -277,7 +277,7 @@ export const siteConfig = {
       heading: "Pourquoi choisir LÉON ?",
       benefits: [
         { title: "Un seul passage, toutes les mesures", description: "Position, dévers et écartement relevés ensemble — sans repasser." },
-        { title: "8 kg, replié à 90 cm", description: "Un seul agent le transporte, l'installe et le range — en autonomie." },
+        { title: "Ultra-léger et portable", description: "Seulement 8 kg et replié à 90 cm — assez léger pour être transporté, assez compact pour être rangé n'importe où." },
         { title: "Directement sur votre tablette", description: "Résultats en Bluetooth, en temps réel — sans câble, sans synchronisation." },
         { title: "Installé en quelques minutes", description: "Sans outil, sans équipe. Posez, mesurez, avancez." },
         { title: "Sécurité opérateur intégrée", description: "Dispositif d'homme mort conforme au ferroviaire. Léger, risque TMS réduit." },
