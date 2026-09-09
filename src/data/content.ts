@@ -4,7 +4,7 @@ export const siteConfig = {
   en: {
     projectInitials: ["LÉO", "N"],
     navLinks: [
-      { label: "About", href: "/about" },
+      { label: "About", href: "#about" },
       { label: "Features", href: "#features" },
     ],
     hero: {
@@ -29,7 +29,7 @@ export const siteConfig = {
     featuresSection: {
       eyebrow: "Key Features",
       heading: "Everything you need to measure, nothing to carry",
-      subheading: "Each survey combines metrological precision and ease of use, designed for the single operator on the track.",
+      subheading: "",
       galleryLabel: "LÉON, Field-Ready, By Design",
       features: [
         {
@@ -106,9 +106,16 @@ export const siteConfig = {
       headlineHighlight: "Sharp in data.",
       lede: "We design lightweight, smartphone-driven measurement tools that give a single operator real autonomy, real-time precision, and zero complexity in the field.",
       approach: {
-        eyebrow: "Our approach",
-        heading: "Built around the worker, not the warehouse",
-        description: "Every ALIXRAIL tool is assembled without tools, operated by one person, and connected via Bluetooth to a smartphone or tablet — delivering live measurements and direct data export from the first minute on site.",
+        eyebrow: "About Us",
+        heading: "Railway Maintenance, Reinvented",
+        story: {
+          title: "Our Story",
+          text: "ALIXRAIL was born from a simple observation: existing railway measurement tools are no longer suited to the challenges of today's maintenance work. Designed by rail people, for rail people, our instruments combine lightness and agility, for data that's accurate and easy to use.",
+        },
+        fieldAgent: {
+          title: "Built for the field agent",
+          text: "Every ALIXRAIL tool assembles without any tools, operates solo, and connects via Bluetooth to a smartphone or tablet — for real-time measurements and data export from the first minute on site.",
+        },
         convictions: [
           { title: "Field-ready", description: "Light and rugged enough to work anywhere on the track, in any railway environment." },
           { title: "Self-sufficient", description: "Smartphone-driven, so one operator measures, records, and shares data without extra hands." },
@@ -167,7 +174,7 @@ export const siteConfig = {
             id: "halo",
             name: "HALO",
             tagline: "Self-reliant. Contact-free.",
-            role: "Autonomous Optical Odometry Tool",
+            role: "Autonomous Optical Odometry Smart Tool",
             highlight: "Distance you can trust, without touching the rail.",
             description: "Measures odometry — distance and position along the track — using optical sensing instead of a contact wheel, removing wear, slippage, and calibration drift.",
             specs: ["Fully autonomous", "Data sent directly to your phone in real time", "Zero contact with the rail"],
@@ -203,14 +210,14 @@ export const siteConfig = {
   fr: {
     projectInitials: ["LÉO", "N"],
     navLinks: [
-      { label: "À propos", href: "/about" },
+      { label: "À propos", href: "#about" },
       { label: "Fonctionnalités", href: "#features" },
     ],
     hero: {
       eyebrow: "Chariot de mesure — géométrie de voie",
-      headlinePart1: "Mesurez la voie",
-      headlinePart2: "Validez sur le",
-      highlightWord: "terrain",
+      headlinePart1: "Le Chariot de Mesure Portable",
+      headlinePart2: "Nouvelle",
+      highlightWord: "Génération",
       primaryButton: { label: "Demander une démonstration", href: "/demo" },
       secondaryButton: { label: "Voir les fonctionnalités", href: "#features" },
       gallery: [
@@ -228,7 +235,7 @@ export const siteConfig = {
     featuresSection: {
       eyebrow: "Fonctionnalités clés",
       heading: "Tout ce qu'il faut mesurer, rien à transporter",
-      subheading: "Chaque relevé combine précision métrologique et simplicité d'usage, pensé pour l'opérateur seul sur la voie.",
+      subheading: "",
       galleryLabel: "LÉON, conçu pour le terrain",
       features: [
         {
@@ -305,9 +312,16 @@ export const siteConfig = {
       headlineHighlight: "Précis dans la donnée.",
       lede: "Nous concevons des outils de mesure légers et pilotés par smartphone qui donnent à un seul opérateur une réelle autonomie, une précision en temps réel et zéro complexité sur le terrain.",
       approach: {
-        eyebrow: "Notre approche",
-        heading: "Pensé pour l'opérateur, pas pour l'entrepôt",
-        description: "Chaque outil ALIXRAIL se déploie sans outillage, s'utilise seul et se connecte en Bluetooth à un smartphone ou une tablette — pour des mesures en direct et un export de données dès la première minute sur site.",
+        eyebrow: "À propos de nous",
+        heading: "La maintenance ferroviaire, réinventée",
+        story: {
+          title: "Notre histoire",
+          text: "ALIXRAIL est née d'un constat simple : les outils de mesure ferroviaire existants ne sont plus adaptés aux enjeux des travaux de maintenance d'aujourd'hui. Conçus par des gens du rail, pour les gens du rail, nos instruments allient légèreté et agilité, pour des données précises et faciles à exploiter.",
+        },
+        fieldAgent: {
+          title: "Conçu pour l'agent de terrain",
+          text: "Chaque outil ALIXRAIL s'assemble sans outillage, s'utilise seul et se connecte en Bluetooth à un smartphone ou une tablette — pour des mesures en temps réel et un export de données dès la première minute sur site.",
+        },
         convictions: [
           { title: "Prêt pour le terrain", description: "Léger et robuste, pour intervenir partout sur la voie, dans tous les environnements ferroviaires." },
           { title: "Autonome", description: "Piloté par smartphone, pour qu'un seul opérateur mesure, enregistre et partage les données sans renfort." },
@@ -366,7 +380,7 @@ export const siteConfig = {
             id: "halo",
             name: "HALO",
             tagline: "Autonome. Sans contact.",
-            role: "Outil d'odométrie optique autonome",
+            role: "Outil intelligent d'odométrie optique autonome",
             highlight: "Une distance fiable, sans jamais toucher le rail.",
             description: "Mesure l'odométrie — distance et position le long de la voie — par détection optique plutôt que par roue de contact, éliminant l'usure, le glissement et la dérive d'étalonnage.",
             specs: ["Totalement autonome", "Données envoyées directement sur votre téléphone en temps réel", "Zéro contact avec le rail"],

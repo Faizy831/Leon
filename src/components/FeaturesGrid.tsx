@@ -90,9 +90,11 @@ export default function FeaturesGrid() {
             <h2 className="text-4xl md:text-5xl font-bold font-display uppercase tracking-tight text-gray-900 mb-6">
               {featuresSection.heading}
             </h2>
-            <p className="text-lg text-gray-600 font-body font-medium">
-              {featuresSection.subheading}
-            </p>
+            {featuresSection.subheading && (
+              <p className="text-lg text-gray-600 font-body font-medium">
+                {featuresSection.subheading}
+              </p>
+            )}
           </motion.div>
         </div>
 

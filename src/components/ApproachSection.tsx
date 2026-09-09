@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MapPin, Smartphone, Target } from "lucide-react";
+import Image from "next/image";
 import { useLanguage } from "../context/LanguageContext";
 import SpotlightCard from "./ui/SpotlightCard";
 
@@ -12,14 +13,14 @@ export default function ApproachSection() {
   const { approach } = content.aboutPage;
 
   return (
-    <section className="relative py-32 bg-[#051625] overflow-hidden">
+    <section id="about" className="relative py-32 bg-[#051625] overflow-hidden scroll-mt-10">
       <div className="max-w-[1180px] mx-auto px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-2xl mb-16"
+          className="max-w-4xl mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-px bg-leon-orange" />
@@ -27,12 +28,34 @@ export default function ApproachSection() {
               {approach.eyebrow}
             </p>
           </div>
-          <h2 className="font-display text-3xl md:text-4xl uppercase tracking-tight text-white font-bold mb-6">
-            {approach.heading}
+          <h2 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-[34px] uppercase tracking-tight text-white font-bold mb-8 flex items-center flex-wrap sm:flex-nowrap gap-x-3.5 gap-y-2">
+            <Image
+              src="/ALIXRAIL_logo_white.png"
+              alt="ALIXRAIL"
+              width={150}
+              height={34}
+              className="h-6 sm:h-7 md:h-8 w-auto object-contain shrink-0"
+            />
+            <span>{approach.heading}</span>
           </h2>
-          <p className="text-lg text-gray-300 font-body font-medium leading-relaxed">
-            {approach.description}
-          </p>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-display text-xl font-bold text-white mb-2">
+                {approach.story.title}
+              </h3>
+              <p className="text-lg text-gray-300 font-body font-normal leading-relaxed">
+                {approach.story.text}
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-xl font-bold text-white mb-2">
+                {approach.fieldAgent.title}
+              </h3>
+              <p className="text-lg text-gray-300 font-body font-normal leading-relaxed">
+                {approach.fieldAgent.text}
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
