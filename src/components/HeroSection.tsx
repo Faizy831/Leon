@@ -28,7 +28,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="w-[180px] sm:w-[220px] h-[52px] sm:h-[62px] relative mb-2"
+            className="w-[220px] h-[92px] sm:w-[280px] sm:h-[117px] relative mb-2"
           >
             <Image
               src="/LEON_logo_color.png"
@@ -54,15 +54,15 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="relative w-full aspect-[4/3] sm:aspect-[16/10] mb-8 sm:mb-10 flex items-center justify-center group"
+            className="relative w-[calc(100%+64px)] sm:w-[calc(100%+96px)] md:w-[calc(100%+112px)] -mx-8 sm:-mx-12 md:-mx-14 aspect-[3/2] mb-8 sm:mb-10 flex items-center justify-center group"
           >
             <Image
-              src="/leon-trolley-three-quarter.jpg"
+              src="/leon-trolley-45-degree.jpg"
               alt="LÉON Portable Railway Measurement Trolley"
               fill
               className="object-contain transition-transform duration-700 group-hover:scale-105"
               priority
-              sizes="(max-width: 768px) 90vw, 680px"
+              sizes="(max-width: 768px) 100vw, 800px"
             />
           </motion.div>
 
