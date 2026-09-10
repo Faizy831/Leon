@@ -64,7 +64,7 @@ const products: ProductConfig[] = [
 ];
 
 export default function Home() {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const [selectedProduct, setSelectedProduct] = useState<ProductConfig | null>(null);
 
   useEffect(() => {
@@ -160,10 +160,18 @@ export default function Home() {
                     </div>
 
                     {/* Card Footer with Role */}
-                    <div className="p-4 sm:p-5 border-t border-gray-100 flex items-center justify-center text-center bg-white flex-1 min-h-[84px] group-hover:bg-gray-50 transition-colors">
+                    <div className="p-4 sm:p-5 border-t border-gray-100 flex flex-col items-center justify-center text-center bg-white flex-1 min-h-[84px] gap-2 group-hover:bg-gray-50 transition-colors">
                       <p className="text-gray-900 font-display font-semibold text-xs sm:text-[13px] md:text-sm leading-snug">
                         {role}
                       </p>
+                      <a
+                        href="mailto:contact@alixrail.com"
+                        onClick={(e) => e.stopPropagation()}
+                        className="font-mono text-[10px] sm:text-[11px] font-bold tracking-wide uppercase hover:underline"
+                        style={{ color: item?.color || '#ec634d' }}
+                      >
+                        {language === 'fr' ? "Plus d'infos ? Contactez-nous" : 'More Info? Contact Us'}
+                      </a>
                     </div>
                   </div>
                 );
