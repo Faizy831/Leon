@@ -62,7 +62,7 @@ export default function HeroSection() {
               fill
               className="object-contain transition-transform duration-700 group-hover:scale-105"
               style={{
-                filter: "brightness(1.08) contrast(1.03) saturate(0.6)",
+                filter: "brightness(1.08) contrast(1.03)",
                 maskImage: "radial-gradient(ellipse at center, black 70%, transparent 100%)",
                 WebkitMaskImage: "radial-gradient(ellipse at center, black 70%, transparent 100%)",
               }}
