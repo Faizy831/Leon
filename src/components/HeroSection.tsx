@@ -57,12 +57,12 @@ export default function HeroSection() {
             className="relative w-full max-w-[640px] sm:max-w-[760px] aspect-[3/2] mx-auto mb-8 sm:mb-10 flex items-center justify-center group"
           >
             <Image
-              src="/leon-trolley-45-degree.jpg"
+              src="/leon-trolley-three-quarter.jpg"
               alt="LÉON Portable Railway Measurement Trolley"
               fill
               className="object-contain transition-transform duration-700 group-hover:scale-105"
               style={{
-                filter: "brightness(1.08) contrast(1.03)",
+                filter: "brightness(1.08) contrast(1.03) saturate(0.6)",
                 maskImage: "radial-gradient(ellipse at center, black 70%, transparent 100%)",
                 WebkitMaskImage: "radial-gradient(ellipse at center, black 70%, transparent 100%)",
               }}
@@ -81,7 +81,7 @@ export default function HeroSection() {
             <p className="text-leon-orange font-display font-bold text-lg sm:text-2xl md:text-4xl uppercase tracking-[0.1em] sm:tracking-[0.15em]">
               {hero.eyebrow}
             </p>
-            <h1 className="text-[#071c2e] font-display font-extrabold text-3xl sm:text-4xl md:text-5xl leading-[1.15] uppercase tracking-tight">
+            <h1 className="text-gray-900 font-display font-extrabold text-3xl sm:text-4xl md:text-5xl leading-[1.15] uppercase tracking-tight">
               {hero.headingPart1}
               <br />
               {hero.headingPart2}
