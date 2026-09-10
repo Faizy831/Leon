@@ -8,10 +8,10 @@ export const siteConfig = {
       { label: "Features", href: "#features" },
     ],
     hero: {
-      eyebrow: "Railway Track Gauge and Position Measuring Trolley",
-      headlinePart1: "The Next-Generation",
-      headlinePart2: "Portable Railway Measurement",
-      highlightWord: "Trolley",
+      tagline: "Your Rail Data On The Go",
+      eyebrow: "THE NEXT-GENERATION",
+      headingPart1: "PORTABLE RAILWAY",
+      headingPart2: "MEASUREMENT TROLLEY",
       primaryButton: { label: "Request a Demo", href: "/demo" },
       secondaryButton: { label: "View Features", href: "#features" },
       gallery: [
@@ -214,10 +214,10 @@ export const siteConfig = {
       { label: "Fonctionnalités", href: "#features" },
     ],
     hero: {
-      eyebrow: "Chariot de mesure — géométrie de voie",
-      headlinePart1: "Le Chariot de Mesure Portable",
-      headlinePart2: "Nouvelle",
-      highlightWord: "Génération",
+      tagline: "Vos données ferroviaires en mouvement",
+      eyebrow: "NOUVELLE GÉNÉRATION",
+      headingPart1: "CHARIOT DE MESURE PORTABLE",
+      headingPart2: "POUR VOIE FERRÉE",
       primaryButton: { label: "Demander une démonstration", href: "/demo" },
       secondaryButton: { label: "Voir les fonctionnalités", href: "#features" },
       gallery: [

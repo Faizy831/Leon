@@ -12,7 +12,9 @@ import {
   HardHat,
   Handshake,
   Wrench,
+  ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 import { useLanguage } from "../context/LanguageContext";
 import SpotlightCard from "./ui/SpotlightCard";
 
@@ -95,6 +97,47 @@ export default function BenefitsPanel() {
             );
           })}
         </div>
+
+        {/* Video Player at the end of Why choose LÉON? section */}
+        <motion.div
+          initial={{ opacity: 0, y: 24, scale: 0.97 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-16 md:mt-20 w-full max-w-4xl mx-auto rounded-[24px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)] border border-white/10 bg-[#071c2e] relative"
+        >
+          <div className="absolute inset-0 border border-white/5 rounded-[24px] pointer-events-none z-10" />
+          <video
+            src="/video-leon-web.mp4"
+            controls
+            playsInline
+            className="w-full h-auto object-cover"
+          />
+        </motion.div>
+
+        {/* Action Buttons below Video */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center"
+        >
+          <Link
+            href={content.hero.primaryButton.href}
+            className="group relative inline-flex items-center gap-3 bg-leon-orange text-white font-bold px-8 py-4 rounded-xl overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_10px_30px_rgba(236,99,77,0.3)] hover:shadow-[0_15px_40px_rgba(236,99,77,0.4)]"
+          >
+            <span className="relative z-10">{content.hero.primaryButton.label}</span>
+            <ArrowRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
+            <div className="absolute inset-0 bg-white/30 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+          </Link>
+          <Link
+            href={content.hero.secondaryButton.href}
+            className="inline-flex items-center gap-3 text-white font-bold px-8 py-4 rounded-xl border border-white/20 bg-white/10 hover:border-white/40 hover:bg-white/20 transition-all hover:scale-105 active:scale-95 shadow-sm backdrop-blur-md"
+          >
+            {content.hero.secondaryButton.label}
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
