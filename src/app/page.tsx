@@ -46,7 +46,7 @@ const products: ProductConfig[] = [
   {
     id: 'halo',
     name: 'HALO',
-    logo: '/HALO_logo.png',
+    logo: '/HALO_logo_blue.png',
     image: '/halo-odometer.jpg',
     link: '#',
     bgColor: 'bg-[#EBF5FB]',
