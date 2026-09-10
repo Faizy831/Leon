@@ -39,12 +39,12 @@ export default function HeroSection() {
             />
           </motion.div>
 
-          {/* Subtitle / Tagline — stretched to match the logo's exact width */}
+          {/* Subtitle / Tagline */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="w-[220px] sm:w-[280px] text-leon-orange font-display font-semibold text-sm sm:text-base tracking-wide mb-6 sm:mb-8 text-justify [text-align-last:justify]"
+            className="text-leon-orange font-display font-semibold text-lg sm:text-xl tracking-wide mb-6 sm:mb-8"
           >
             {hero.tagline}
           </motion.p>
