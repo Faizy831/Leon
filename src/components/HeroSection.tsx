@@ -16,12 +16,12 @@ export default function HeroSection() {
       {/* Background ambient lighting */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-leon-orange/10 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="max-w-[1180px] w-full mx-auto px-4 sm:px-6 relative z-10 flex flex-col items-center">
+      <div className="max-w-[1180px] w-full mx-auto px-8 relative z-10 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 30, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="w-full max-w-[740px] bg-white rounded-[32px] sm:rounded-[44px] shadow-[0_25px_80px_rgba(0,0,0,0.45)] border border-white/30 p-8 sm:p-12 md:p-14 text-center flex flex-col items-center overflow-hidden relative"
+          className="w-full bg-white rounded-[32px] sm:rounded-[44px] shadow-[0_25px_80px_rgba(0,0,0,0.45)] border border-white/30 p-8 sm:p-12 md:p-14 text-center flex flex-col items-center overflow-hidden relative"
         >
           {/* Top Logo */}
           <motion.div
@@ -54,13 +54,17 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="relative w-[calc(100%+64px)] sm:w-[calc(100%+96px)] md:w-[calc(100%+112px)] -mx-8 sm:-mx-12 md:-mx-14 aspect-[3/2] mb-8 sm:mb-10 flex items-center justify-center group"
+            className="relative w-full max-w-[520px] sm:max-w-[600px] aspect-[3/2] mx-auto mb-8 sm:mb-10 flex items-center justify-center group"
           >
             <Image
               src="/leon-trolley-45-degree.jpg"
               alt="LÉON Portable Railway Measurement Trolley"
               fill
               className="object-contain transition-transform duration-700 group-hover:scale-105"
+              style={{
+                maskImage: "radial-gradient(ellipse at center, black 65%, transparent 100%)",
+                WebkitMaskImage: "radial-gradient(ellipse at center, black 65%, transparent 100%)",
+              }}
               priority
               sizes="(max-width: 768px) 100vw, 800px"
             />
@@ -73,10 +77,10 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="space-y-2"
           >
-            <p className="text-leon-orange font-display font-bold text-base sm:text-lg md:text-xl uppercase tracking-[0.15em]">
+            <p className="text-leon-orange font-display font-bold text-lg sm:text-xl md:text-2xl uppercase tracking-[0.15em]">
               {hero.eyebrow}
             </p>
-            <h1 className="text-[#071c2e] font-display font-extrabold text-2xl sm:text-3xl md:text-[36px] leading-[1.15] uppercase tracking-tight">
+            <h1 className="text-[#071c2e] font-display font-extrabold text-3xl sm:text-4xl md:text-5xl leading-[1.15] uppercase tracking-tight">
               {hero.headingPart1}
               <br />
               {hero.headingPart2}
