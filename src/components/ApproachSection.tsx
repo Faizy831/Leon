@@ -39,7 +39,7 @@ export default function ApproachSection() {
             />
             <span>{approach.heading}</span>
           </h2>
-          <div className="space-y-6 text-left">
+          <div className="space-y-6">
             <div>
               <h3 className="font-display text-xl font-bold text-white mb-2">
                 {approach.story.title}
