@@ -97,12 +97,13 @@ export default function Home() {
         {/* Our Products Section */}
         <section className="bg-[#051625] py-24 border-t border-white/5">
           <div className="max-w-[1180px] mx-auto px-8">
-            <div className="max-w-2xl mb-12">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="max-w-2xl mx-auto mb-12 text-center">
+              <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="w-12 h-px bg-leon-orange" />
                 <p className="font-mono text-sm tracking-widest uppercase text-leon-orange font-bold">
                   {content.aboutPage?.products?.eyebrow || "Our Products"}
                 </p>
+                <div className="w-12 h-px bg-leon-orange" />
               </div>
               <h2 className="font-display text-3xl md:text-4xl uppercase tracking-tight text-white font-bold">
                 {content.aboutPage?.products?.heading || "A product range built for modern rail challenges"}

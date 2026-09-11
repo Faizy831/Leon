@@ -20,15 +20,16 @@ export default function ApproachSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mb-16"
+          className="max-w-4xl mx-auto mb-16 text-center"
         >
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-12 h-px bg-leon-orange" />
             <p className="font-mono text-sm tracking-widest uppercase text-leon-orange font-bold">
               {approach.eyebrow}
             </p>
+            <div className="w-12 h-px bg-leon-orange" />
           </div>
-          <h2 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-[34px] uppercase tracking-tight text-white font-bold mb-8 flex items-center flex-wrap sm:flex-nowrap gap-x-3.5 gap-y-2">
+          <h2 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-[34px] uppercase tracking-tight text-white font-bold mb-8 flex items-center justify-center flex-wrap gap-x-3.5 gap-y-2">
             <Image
               src="/ALIXRAIL_logo_white.png"
               alt="ALIXRAIL"
@@ -38,7 +39,7 @@ export default function ApproachSection() {
             />
             <span>{approach.heading}</span>
           </h2>
-          <div className="space-y-6">
+          <div className="space-y-6 text-left">
             <div>
               <h3 className="font-display text-xl font-bold text-white mb-2">
                 {approach.story.title}

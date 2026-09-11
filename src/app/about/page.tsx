@@ -74,13 +74,14 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
-              className="max-w-2xl mb-16"
+              className="max-w-2xl mx-auto mb-16 text-center"
             >
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="w-12 h-px bg-leon-orange" />
                 <p className="font-mono text-sm tracking-widest uppercase text-leon-orange font-bold">
                   {aboutPage.products.eyebrow}
                 </p>
+                <div className="w-12 h-px bg-leon-orange" />
               </div>
               <h2 className="font-display text-3xl md:text-4xl uppercase tracking-tight text-white font-bold">
                 {aboutPage.products.heading}
@@ -176,13 +177,14 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
-              className="max-w-2xl mb-16"
+              className="max-w-2xl mx-auto mb-16 text-center"
             >
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="w-12 h-px bg-leon-orange" />
                 <p className="font-mono text-sm tracking-widest uppercase text-leon-orange font-bold">
                   {aboutPage.why.eyebrow}
                 </p>
+                <div className="w-12 h-px bg-leon-orange" />
               </div>
               <h2 className="font-display text-3xl md:text-4xl uppercase tracking-tight text-white font-bold">
                 {aboutPage.why.heading}

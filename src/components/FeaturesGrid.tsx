@@ -73,7 +73,7 @@ export default function FeaturesGrid() {
       <div className="max-w-[1180px] mx-auto px-8 relative z-10">
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
+        <div className="flex flex-col items-center text-center mb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -81,11 +81,12 @@ export default function FeaturesGrid() {
             transition={{ duration: 0.8 }}
             className="max-w-xl"
           >
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center justify-center gap-4 mb-4">
               <div className="w-12 h-px bg-leon-orange" />
               <p className="font-mono text-sm tracking-widest uppercase text-leon-orange font-bold">
                 {featuresSection.eyebrow}
               </p>
+              <div className="w-12 h-px bg-leon-orange" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold font-display uppercase tracking-tight text-gray-900 mb-6">
               {featuresSection.heading}
