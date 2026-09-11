@@ -40,7 +40,7 @@ const products: ProductConfig[] = [
     logo: '/KAT_logo.png',
     image: null,
     link: '#',
-    bgColor: 'bg-[#C6E9FA]',
+    bgColor: 'bg-[#FBE7F0]',
     fallbackRole: 'Catenary Contact Wire Height & Stagger Measurement',
   },
   {
@@ -49,7 +49,7 @@ const products: ProductConfig[] = [
     logo: '/HALO_logo.png',
     image: '/halo-odometer.jpg',
     link: '#',
-    bgColor: 'bg-[#EBF5FB]',
+    bgColor: 'bg-[#E6F7EA]',
     fallbackRole: 'Autonomous Optical Odometry Smart Tool',
   },
   {
@@ -58,7 +58,7 @@ const products: ProductConfig[] = [
     logo: '/TOM_logo.png',
     image: '/tom-tool.jpg',
     link: '#',
-    bgColor: 'bg-[#F6CC9A]',
+    bgColor: 'bg-[#E1F5F7]',
     fallbackRole: 'Rail Chainage & Field Event Tracking Tool',
   }
 ];
