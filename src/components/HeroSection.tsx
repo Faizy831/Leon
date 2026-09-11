@@ -57,7 +57,7 @@ export default function HeroSection() {
             className="relative w-full max-w-[640px] sm:max-w-[760px] aspect-[3/2] mx-auto mb-8 sm:mb-10 flex items-center justify-center group"
           >
             <Image
-              src="/leon-trolley-three-quarter.jpg"
+              src="/leon-trolley-hero.jpg"
               alt="LÉON Portable Railway Measurement Trolley"
               fill
               className="object-contain transition-transform duration-700 group-hover:scale-105"
